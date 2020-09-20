@@ -1,0 +1,45 @@
+{
+  "name": "krc-keycloak-admin",
+  "version": "1.0.0",
+  "description": "krc - keycloak admin tools",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "format": "prettier --config .prettierrc --write src/**/*",
+    "build": "npm run clean && tsc && gulp bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DuyLuongPhung/krc-keycloak-admin.git"
+  },
+  "keywords": [
+    "krc",
+    "keycloak",
+    "nodejs",
+    "node",
+    "javascript",
+    "admin",
+    "api"
+  ],
+  "author": "Luong Phung <luonguit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "keycloak-admin": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.3",
+    "@types/mongoose": "^5.7.3",
+    "@types/node": "^13.9.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "mongoose": "^5.9.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  }
+}
